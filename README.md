@@ -1,1 +1,1 @@
-# sktu_mips_clinic_test_task
+# kstu_mips_clinic_test_task
