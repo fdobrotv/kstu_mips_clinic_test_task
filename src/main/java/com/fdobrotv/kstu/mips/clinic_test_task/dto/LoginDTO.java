@@ -4,15 +4,10 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDate;
-import java.util.UUID;
 
 @Getter
 @Setter
-public class PatientDTO {
-    UUID id;
+public class LoginDTO {
     String email;
-    String phone;
-    String name;
-    String lastName;
-    LocalDate birthDate;
+    String password;
 }

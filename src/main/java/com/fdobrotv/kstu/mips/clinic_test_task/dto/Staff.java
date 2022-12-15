@@ -3,16 +3,16 @@ package com.fdobrotv.kstu.mips.clinic_test_task.dto;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDate;
+import javax.validation.constraints.NotNull;
 import java.util.UUID;
 
 @Getter
 @Setter
-public class PatientDTO {
+public class Staff {
+    @NotNull
     UUID id;
-    String email;
-    String phone;
-    String name;
+    String fullName;
     String lastName;
-    LocalDate birthDate;
+    String email;
+    Speciality speciality;
 }

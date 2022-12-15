@@ -17,13 +17,13 @@ public class MainView extends VerticalLayout {
                     ui.navigate(PatientRegistrationView.class));
         });
 
-        Button scheduleButton = new Button("Schedule a visit");
-        scheduleButton.addClickListener(clickEvent -> {
+        Button loginButton = new Button("Login");
+        loginButton.addClickListener(clickEvent -> {
             registerButton.getUI().ifPresent(ui ->
-                    ui.navigate(PatientSchedulerView.class));
+                    ui.navigate(LoginView.class));
         });
 
-        add(welcomeText, registerButton, scheduleButton);
+        add(welcomeText, registerButton, loginButton);
     }
 
 }
